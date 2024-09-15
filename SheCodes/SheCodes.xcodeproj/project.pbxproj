@@ -1,0 +1,654 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F1D256C2C95A30100A76350 /* SheCodesApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D256B2C95A30100A76350 /* SheCodesApp.swift */; };
+		4F1D256E2C95A30100A76350 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D256D2C95A30100A76350 /* ContentView.swift */; };
+		4F1D25702C95A30300A76350 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1D256F2C95A30300A76350 /* Assets.xcassets */; };
+		4F1D25732C95A30300A76350 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4F1D25722C95A30300A76350 /* Preview Assets.xcassets */; };
+		4F1D25752C95A30300A76350 /* Persistence.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25742C95A30300A76350 /* Persistence.swift */; };
+		4F1D25782C95A30300A76350 /* SheCodes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25762C95A30300A76350 /* SheCodes.xcdatamodeld */; };
+		4F1D25812C95A83800A76350 /* LoginView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25802C95A83800A76350 /* LoginView.swift */; };
+		4F1D258A2C95A9BE00A76350 /* ChatView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25892C95A9BE00A76350 /* ChatView.swift */; };
+		4F1D258D2C95AB3200A76350 /* ExyteChat in Frameworks */ = {isa = PBXBuildFile; productRef = 4F1D258C2C95AB3200A76350 /* ExyteChat */; };
+		4F1D25912C95AF4200A76350 /* ChatGPTAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25902C95AF4200A76350 /* ChatGPTAPI.swift */; };
+		4F1D259B2C95B98300A76350 /* MatchingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D259A2C95B98300A76350 /* MatchingView.swift */; };
+		4F1D259D2C95BA1500A76350 /* CardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D259C2C95BA1500A76350 /* CardView.swift */; };
+		4F1D25A02C95BB7800A76350 /* Pet.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D259F2C95BB7800A76350 /* Pet.swift */; };
+		4F1D25A22C95C8F100A76350 /* PetCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25A12C95C8F100A76350 /* PetCardView.swift */; };
+		4F1D25A42C95C9D500A76350 /* PetSearchView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25A32C95C9D400A76350 /* PetSearchView.swift */; };
+		4F1D25A62C95D49000A76350 /* AddFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25A52C95D49000A76350 /* AddFormView.swift */; };
+		4F1D25A82C96113700A76350 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25A72C96113700A76350 /* User.swift */; };
+		4F1D25AA2C9611CB00A76350 /* Login.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25A92C9611CB00A76350 /* Login.swift */; };
+		4F1D25AD2C9612EB00A76350 /* AuthViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25AC2C9612EB00A76350 /* AuthViewModel.swift */; };
+		4F1D25AF2C96161B00A76350 /* HomeView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25AE2C96161B00A76350 /* HomeView.swift */; };
+		4F1D25B12C9617AA00A76350 /* PetButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25B02C9617AA00A76350 /* PetButtonView.swift */; };
+		4F1D25B32C9617BB00A76350 /* MentorButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25B22C9617BB00A76350 /* MentorButtonView.swift */; };
+		4F1D25B52C961E9D00A76350 /* PhsychologyButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25B42C961E9D00A76350 /* PhsychologyButtonView.swift */; };
+		4F1D25B72C961F7000A76350 /* BookButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25B62C961F7000A76350 /* BookButtonView.swift */; };
+		4F1D25B92C961FE000A76350 /* EventButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25B82C961FE000A76350 /* EventButtonView.swift */; };
+		4F1D25BB2C9621B500A76350 /* OportunityButtonView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25BA2C9621B500A76350 /* OportunityButtonView.swift */; };
+		4F1D25BD2C962A4100A76350 /* EventRecView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25BC2C962A4100A76350 /* EventRecView.swift */; };
+		4F1D25BF2C962C4400A76350 /* EventCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25BE2C962C4400A76350 /* EventCardView.swift */; };
+		4F1D25C12C962C6000A76350 /* Event.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25C02C962C6000A76350 /* Event.swift */; };
+		4F1D25C32C96365300A76350 /* PetViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25C22C96365300A76350 /* PetViewModel.swift */; };
+		4F1D25C52C96471200A76350 /* PhsychologyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25C42C96471200A76350 /* PhsychologyView.swift */; };
+		4F1D25C72C964AC100A76350 /* TalkVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25C62C964AC100A76350 /* TalkVIew.swift */; };
+		4F1D25C92C964BC100A76350 /* Talk.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25C82C964BC100A76350 /* Talk.swift */; };
+		4F1D25CB2C9653A000A76350 /* PsychologistCardVIew.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25CA2C9653A000A76350 /* PsychologistCardVIew.swift */; };
+		4F1D25CD2C96543700A76350 /* Psychologist.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25CC2C96543700A76350 /* Psychologist.swift */; };
+		4F1D25CF2C96547F00A76350 /* PsychologistViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25CE2C96547F00A76350 /* PsychologistViewModel.swift */; };
+		4F1D25D12C96576500A76350 /* StarRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25D02C96576500A76350 /* StarRatingView.swift */; };
+		4F1D25D32C966C5000A76350 /* MentorView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25D22C966C5000A76350 /* MentorView.swift */; };
+		4F1D25D52C966D1700A76350 /* Mentor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25D42C966D1700A76350 /* Mentor.swift */; };
+		4F1D25D72C96711E00A76350 /* MentorCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25D62C96711E00A76350 /* MentorCardView.swift */; };
+		4F1D25D92C96729400A76350 /* MentorProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25D82C96729400A76350 /* MentorProfileView.swift */; };
+		4F1D25DB2C967E2300A76350 /* EventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25DA2C967E2300A76350 /* EventView.swift */; };
+		4F1D25DD2C96800400A76350 /* EventViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25DC2C96800400A76350 /* EventViewModel.swift */; };
+		4F1D25DF2C96808200A76350 /* CardEventView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25DE2C96808100A76350 /* CardEventView.swift */; };
+		4F1D25E12C96C4D800A76350 /* EventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25E02C96C4D800A76350 /* EventDetailView.swift */; };
+		4F1D25E32C96CF5E00A76350 /* BookView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25E22C96CF5E00A76350 /* BookView.swift */; };
+		4F1D25E52C96D52D00A76350 /* BookCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25E42C96D52D00A76350 /* BookCardView.swift */; };
+		4F1D25E72C96D65B00A76350 /* BookClubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25E62C96D65B00A76350 /* BookClubs.swift */; };
+		4F1D25E92C96D76400A76350 /* BookDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F1D25E82C96D76300A76350 /* BookDetailView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		4F1D25682C95A30100A76350 /* SheCodes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SheCodes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		4F1D256B2C95A30100A76350 /* SheCodesApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SheCodesApp.swift; sourceTree = "<group>"; };
+		4F1D256D2C95A30100A76350 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		4F1D256F2C95A30300A76350 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4F1D25722C95A30300A76350 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		4F1D25742C95A30300A76350 /* Persistence.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Persistence.swift; sourceTree = "<group>"; };
+		4F1D25772C95A30300A76350 /* SheCodes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = SheCodes.xcdatamodel; sourceTree = "<group>"; };
+		4F1D25802C95A83800A76350 /* LoginView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginView.swift; sourceTree = "<group>"; };
+		4F1D25892C95A9BE00A76350 /* ChatView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatView.swift; sourceTree = "<group>"; };
+		4F1D25902C95AF4200A76350 /* ChatGPTAPI.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatGPTAPI.swift; sourceTree = "<group>"; };
+		4F1D259A2C95B98300A76350 /* MatchingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MatchingView.swift; sourceTree = "<group>"; };
+		4F1D259C2C95BA1500A76350 /* CardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardView.swift; sourceTree = "<group>"; };
+		4F1D259F2C95BB7800A76350 /* Pet.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Pet.swift; sourceTree = "<group>"; };
+		4F1D25A12C95C8F100A76350 /* PetCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetCardView.swift; sourceTree = "<group>"; };
+		4F1D25A32C95C9D400A76350 /* PetSearchView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetSearchView.swift; sourceTree = "<group>"; };
+		4F1D25A52C95D49000A76350 /* AddFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFormView.swift; sourceTree = "<group>"; };
+		4F1D25A72C96113700A76350 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		4F1D25A92C9611CB00A76350 /* Login.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Login.swift; sourceTree = "<group>"; };
+		4F1D25AC2C9612EB00A76350 /* AuthViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthViewModel.swift; sourceTree = "<group>"; };
+		4F1D25AE2C96161B00A76350 /* HomeView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeView.swift; sourceTree = "<group>"; };
+		4F1D25B02C9617AA00A76350 /* PetButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetButtonView.swift; sourceTree = "<group>"; };
+		4F1D25B22C9617BB00A76350 /* MentorButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorButtonView.swift; sourceTree = "<group>"; };
+		4F1D25B42C961E9D00A76350 /* PhsychologyButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhsychologyButtonView.swift; sourceTree = "<group>"; };
+		4F1D25B62C961F7000A76350 /* BookButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookButtonView.swift; sourceTree = "<group>"; };
+		4F1D25B82C961FE000A76350 /* EventButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventButtonView.swift; sourceTree = "<group>"; };
+		4F1D25BA2C9621B500A76350 /* OportunityButtonView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OportunityButtonView.swift; sourceTree = "<group>"; };
+		4F1D25BC2C962A4100A76350 /* EventRecView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventRecView.swift; sourceTree = "<group>"; };
+		4F1D25BE2C962C4400A76350 /* EventCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventCardView.swift; sourceTree = "<group>"; };
+		4F1D25C02C962C6000A76350 /* Event.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Event.swift; sourceTree = "<group>"; };
+		4F1D25C22C96365300A76350 /* PetViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PetViewModel.swift; sourceTree = "<group>"; };
+		4F1D25C42C96471200A76350 /* PhsychologyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhsychologyView.swift; sourceTree = "<group>"; };
+		4F1D25C62C964AC100A76350 /* TalkVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TalkVIew.swift; sourceTree = "<group>"; };
+		4F1D25C82C964BC100A76350 /* Talk.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Talk.swift; sourceTree = "<group>"; };
+		4F1D25CA2C9653A000A76350 /* PsychologistCardVIew.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistCardVIew.swift; sourceTree = "<group>"; };
+		4F1D25CC2C96543700A76350 /* Psychologist.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Psychologist.swift; sourceTree = "<group>"; };
+		4F1D25CE2C96547F00A76350 /* PsychologistViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PsychologistViewModel.swift; sourceTree = "<group>"; };
+		4F1D25D02C96576500A76350 /* StarRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StarRatingView.swift; sourceTree = "<group>"; };
+		4F1D25D22C966C5000A76350 /* MentorView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorView.swift; sourceTree = "<group>"; };
+		4F1D25D42C966D1700A76350 /* Mentor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Mentor.swift; sourceTree = "<group>"; };
+		4F1D25D62C96711E00A76350 /* MentorCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorCardView.swift; sourceTree = "<group>"; };
+		4F1D25D82C96729400A76350 /* MentorProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MentorProfileView.swift; sourceTree = "<group>"; };
+		4F1D25DA2C967E2300A76350 /* EventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventView.swift; sourceTree = "<group>"; };
+		4F1D25DC2C96800400A76350 /* EventViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventViewModel.swift; sourceTree = "<group>"; };
+		4F1D25DE2C96808100A76350 /* CardEventView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardEventView.swift; sourceTree = "<group>"; };
+		4F1D25E02C96C4D800A76350 /* EventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventDetailView.swift; sourceTree = "<group>"; };
+		4F1D25E22C96CF5E00A76350 /* BookView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookView.swift; sourceTree = "<group>"; };
+		4F1D25E42C96D52D00A76350 /* BookCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookCardView.swift; sourceTree = "<group>"; };
+		4F1D25E62C96D65B00A76350 /* BookClubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookClubs.swift; sourceTree = "<group>"; };
+		4F1D25E82C96D76300A76350 /* BookDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookDetailView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4F1D25652C95A30100A76350 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1D258D2C95AB3200A76350 /* ExyteChat in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4F1D255F2C95A30100A76350 = {
+			isa = PBXGroup;
+			children = (
+				4F1D256A2C95A30100A76350 /* SheCodes */,
+				4F1D25692C95A30100A76350 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4F1D25692C95A30100A76350 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25682C95A30100A76350 /* SheCodes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4F1D256A2C95A30100A76350 /* SheCodes */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25AB2C9612DA00A76350 /* ViewModel */,
+				4F1D259E2C95BB6500A76350 /* Models */,
+				4F1D258E2C95AEEB00A76350 /* API  */,
+				4F1D257E2C95A76D00A76350 /* UI */,
+				4F1D256B2C95A30100A76350 /* SheCodesApp.swift */,
+				4F1D256D2C95A30100A76350 /* ContentView.swift */,
+				4F1D256F2C95A30300A76350 /* Assets.xcassets */,
+				4F1D25742C95A30300A76350 /* Persistence.swift */,
+				4F1D25762C95A30300A76350 /* SheCodes.xcdatamodeld */,
+				4F1D25712C95A30300A76350 /* Preview Content */,
+			);
+			path = SheCodes;
+			sourceTree = "<group>";
+		};
+		4F1D25712C95A30300A76350 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25722C95A30300A76350 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		4F1D257E2C95A76D00A76350 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25882C95A99500A76350 /* Home */,
+				4F1D25872C95A98500A76350 /* Event */,
+				4F1D25862C95A97F00A76350 /* Book */,
+				4F1D25852C95A96F00A76350 /* Psychology */,
+				4F1D25832C95A93300A76350 /* Pets */,
+				4F1D25822C95A90200A76350 /* Mentorship */,
+				4F1D257F2C95A78500A76350 /* Auth  */,
+			);
+			path = UI;
+			sourceTree = "<group>";
+		};
+		4F1D257F2C95A78500A76350 /* Auth  */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25802C95A83800A76350 /* LoginView.swift */,
+			);
+			path = "Auth ";
+			sourceTree = "<group>";
+		};
+		4F1D25822C95A90200A76350 /* Mentorship */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25D22C966C5000A76350 /* MentorView.swift */,
+				4F1D25D62C96711E00A76350 /* MentorCardView.swift */,
+				4F1D25D82C96729400A76350 /* MentorProfileView.swift */,
+			);
+			path = Mentorship;
+			sourceTree = "<group>";
+		};
+		4F1D25832C95A93300A76350 /* Pets */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D259A2C95B98300A76350 /* MatchingView.swift */,
+				4F1D259C2C95BA1500A76350 /* CardView.swift */,
+				4F1D25A12C95C8F100A76350 /* PetCardView.swift */,
+				4F1D25A32C95C9D400A76350 /* PetSearchView.swift */,
+				4F1D25A52C95D49000A76350 /* AddFormView.swift */,
+			);
+			path = Pets;
+			sourceTree = "<group>";
+		};
+		4F1D25852C95A96F00A76350 /* Psychology */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25C42C96471200A76350 /* PhsychologyView.swift */,
+				4F1D25C62C964AC100A76350 /* TalkVIew.swift */,
+				4F1D25CA2C9653A000A76350 /* PsychologistCardVIew.swift */,
+				4F1D25892C95A9BE00A76350 /* ChatView.swift */,
+				4F1D25D02C96576500A76350 /* StarRatingView.swift */,
+			);
+			path = Psychology;
+			sourceTree = "<group>";
+		};
+		4F1D25862C95A97F00A76350 /* Book */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25E22C96CF5E00A76350 /* BookView.swift */,
+				4F1D25E42C96D52D00A76350 /* BookCardView.swift */,
+				4F1D25E82C96D76300A76350 /* BookDetailView.swift */,
+			);
+			path = Book;
+			sourceTree = "<group>";
+		};
+		4F1D25872C95A98500A76350 /* Event */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25DA2C967E2300A76350 /* EventView.swift */,
+				4F1D25DE2C96808100A76350 /* CardEventView.swift */,
+				4F1D25E02C96C4D800A76350 /* EventDetailView.swift */,
+			);
+			path = Event;
+			sourceTree = "<group>";
+		};
+		4F1D25882C95A99500A76350 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25AE2C96161B00A76350 /* HomeView.swift */,
+				4F1D25B02C9617AA00A76350 /* PetButtonView.swift */,
+				4F1D25B22C9617BB00A76350 /* MentorButtonView.swift */,
+				4F1D25B42C961E9D00A76350 /* PhsychologyButtonView.swift */,
+				4F1D25B62C961F7000A76350 /* BookButtonView.swift */,
+				4F1D25B82C961FE000A76350 /* EventButtonView.swift */,
+				4F1D25BA2C9621B500A76350 /* OportunityButtonView.swift */,
+				4F1D25BC2C962A4100A76350 /* EventRecView.swift */,
+				4F1D25BE2C962C4400A76350 /* EventCardView.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		4F1D258E2C95AEEB00A76350 /* API  */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25902C95AF4200A76350 /* ChatGPTAPI.swift */,
+				4F1D25A92C9611CB00A76350 /* Login.swift */,
+			);
+			path = "API ";
+			sourceTree = "<group>";
+		};
+		4F1D259E2C95BB6500A76350 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D259F2C95BB7800A76350 /* Pet.swift */,
+				4F1D25A72C96113700A76350 /* User.swift */,
+				4F1D25C02C962C6000A76350 /* Event.swift */,
+				4F1D25CC2C96543700A76350 /* Psychologist.swift */,
+				4F1D25C82C964BC100A76350 /* Talk.swift */,
+				4F1D25D42C966D1700A76350 /* Mentor.swift */,
+				4F1D25E62C96D65B00A76350 /* BookClubs.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		4F1D25AB2C9612DA00A76350 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				4F1D25AC2C9612EB00A76350 /* AuthViewModel.swift */,
+				4F1D25C22C96365300A76350 /* PetViewModel.swift */,
+				4F1D25CE2C96547F00A76350 /* PsychologistViewModel.swift */,
+				4F1D25DC2C96800400A76350 /* EventViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4F1D25672C95A30100A76350 /* SheCodes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4F1D257B2C95A30300A76350 /* Build configuration list for PBXNativeTarget "SheCodes" */;
+			buildPhases = (
+				4F1D25642C95A30100A76350 /* Sources */,
+				4F1D25652C95A30100A76350 /* Frameworks */,
+				4F1D25662C95A30100A76350 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SheCodes;
+			packageProductDependencies = (
+				4F1D258C2C95AB3200A76350 /* ExyteChat */,
+			);
+			productName = SheCodes;
+			productReference = 4F1D25682C95A30100A76350 /* SheCodes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4F1D25602C95A30100A76350 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				KnownAssetTags = (
+					APi,
+				);
+				LastSwiftUpdateCheck = 1540;
+				LastUpgradeCheck = 1540;
+				TargetAttributes = {
+					4F1D25672C95A30100A76350 = {
+						CreatedOnToolsVersion = 15.4;
+					};
+				};
+			};
+			buildConfigurationList = 4F1D25632C95A30100A76350 /* Build configuration list for PBXProject "SheCodes" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4F1D255F2C95A30100A76350;
+			packageReferences = (
+				4F1D258B2C95AB3200A76350 /* XCRemoteSwiftPackageReference "Chat" */,
+			);
+			productRefGroup = 4F1D25692C95A30100A76350 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4F1D25672C95A30100A76350 /* SheCodes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4F1D25662C95A30100A76350 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1D25732C95A30300A76350 /* Preview Assets.xcassets in Resources */,
+				4F1D25702C95A30300A76350 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4F1D25642C95A30100A76350 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F1D25D32C966C5000A76350 /* MentorView.swift in Sources */,
+				4F1D25C32C96365300A76350 /* PetViewModel.swift in Sources */,
+				4F1D25752C95A30300A76350 /* Persistence.swift in Sources */,
+				4F1D259D2C95BA1500A76350 /* CardView.swift in Sources */,
+				4F1D25E72C96D65B00A76350 /* BookClubs.swift in Sources */,
+				4F1D25B52C961E9D00A76350 /* PhsychologyButtonView.swift in Sources */,
+				4F1D25B92C961FE000A76350 /* EventButtonView.swift in Sources */,
+				4F1D25A22C95C8F100A76350 /* PetCardView.swift in Sources */,
+				4F1D25812C95A83800A76350 /* LoginView.swift in Sources */,
+				4F1D256E2C95A30100A76350 /* ContentView.swift in Sources */,
+				4F1D25D92C96729400A76350 /* MentorProfileView.swift in Sources */,
+				4F1D25AF2C96161B00A76350 /* HomeView.swift in Sources */,
+				4F1D259B2C95B98300A76350 /* MatchingView.swift in Sources */,
+				4F1D25B72C961F7000A76350 /* BookButtonView.swift in Sources */,
+				4F1D25DD2C96800400A76350 /* EventViewModel.swift in Sources */,
+				4F1D25E32C96CF5E00A76350 /* BookView.swift in Sources */,
+				4F1D25D12C96576500A76350 /* StarRatingView.swift in Sources */,
+				4F1D25AA2C9611CB00A76350 /* Login.swift in Sources */,
+				4F1D25DB2C967E2300A76350 /* EventView.swift in Sources */,
+				4F1D25C72C964AC100A76350 /* TalkVIew.swift in Sources */,
+				4F1D25E92C96D76400A76350 /* BookDetailView.swift in Sources */,
+				4F1D25A82C96113700A76350 /* User.swift in Sources */,
+				4F1D25C12C962C6000A76350 /* Event.swift in Sources */,
+				4F1D25E12C96C4D800A76350 /* EventDetailView.swift in Sources */,
+				4F1D25CD2C96543700A76350 /* Psychologist.swift in Sources */,
+				4F1D25BD2C962A4100A76350 /* EventRecView.swift in Sources */,
+				4F1D25A02C95BB7800A76350 /* Pet.swift in Sources */,
+				4F1D25E52C96D52D00A76350 /* BookCardView.swift in Sources */,
+				4F1D25C52C96471200A76350 /* PhsychologyView.swift in Sources */,
+				4F1D25D72C96711E00A76350 /* MentorCardView.swift in Sources */,
+				4F1D25BF2C962C4400A76350 /* EventCardView.swift in Sources */,
+				4F1D25BB2C9621B500A76350 /* OportunityButtonView.swift in Sources */,
+				4F1D25B12C9617AA00A76350 /* PetButtonView.swift in Sources */,
+				4F1D25D52C966D1700A76350 /* Mentor.swift in Sources */,
+				4F1D256C2C95A30100A76350 /* SheCodesApp.swift in Sources */,
+				4F1D25CB2C9653A000A76350 /* PsychologistCardVIew.swift in Sources */,
+				4F1D25A42C95C9D500A76350 /* PetSearchView.swift in Sources */,
+				4F1D25C92C964BC100A76350 /* Talk.swift in Sources */,
+				4F1D25912C95AF4200A76350 /* ChatGPTAPI.swift in Sources */,
+				4F1D25AD2C9612EB00A76350 /* AuthViewModel.swift in Sources */,
+				4F1D25DF2C96808200A76350 /* CardEventView.swift in Sources */,
+				4F1D258A2C95A9BE00A76350 /* ChatView.swift in Sources */,
+				4F1D25A62C95D49000A76350 /* AddFormView.swift in Sources */,
+				4F1D25B32C9617BB00A76350 /* MentorButtonView.swift in Sources */,
+				4F1D25782C95A30300A76350 /* SheCodes.xcdatamodeld in Sources */,
+				4F1D25CF2C96547F00A76350 /* PsychologistViewModel.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		4F1D25792C95A30300A76350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4F1D257A2C95A30300A76350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.5;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4F1D257C2C95A30300A76350 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SheCodes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madina.amankeldinova.SheCodes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		4F1D257D2C95A30300A76350 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"SheCodes/Preview Content\"";
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = madina.amankeldinova.SheCodes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4F1D25632C95A30100A76350 /* Build configuration list for PBXProject "SheCodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F1D25792C95A30300A76350 /* Debug */,
+				4F1D257A2C95A30300A76350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4F1D257B2C95A30300A76350 /* Build configuration list for PBXNativeTarget "SheCodes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4F1D257C2C95A30300A76350 /* Debug */,
+				4F1D257D2C95A30300A76350 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCRemoteSwiftPackageReference section */
+		4F1D258B2C95AB3200A76350 /* XCRemoteSwiftPackageReference "Chat" */ = {
+			isa = XCRemoteSwiftPackageReference;
+			repositoryURL = "https://github.com/exyte/Chat.git";
+			requirement = {
+				kind = upToNextMajorVersion;
+				minimumVersion = 2.0.5;
+			};
+		};
+/* End XCRemoteSwiftPackageReference section */
+
+/* Begin XCSwiftPackageProductDependency section */
+		4F1D258C2C95AB3200A76350 /* ExyteChat */ = {
+			isa = XCSwiftPackageProductDependency;
+			package = 4F1D258B2C95AB3200A76350 /* XCRemoteSwiftPackageReference "Chat" */;
+			productName = ExyteChat;
+		};
+/* End XCSwiftPackageProductDependency section */
+
+/* Begin XCVersionGroup section */
+		4F1D25762C95A30300A76350 /* SheCodes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				4F1D25772C95A30300A76350 /* SheCodes.xcdatamodel */,
+			);
+			currentVersion = 4F1D25772C95A30300A76350 /* SheCodes.xcdatamodel */;
+			path = SheCodes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 4F1D25602C95A30100A76350 /* Project object */;
+}
